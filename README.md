@@ -18,18 +18,18 @@ This is essentially a portable (and 3x faster):
 sed -E -e 's/^\s*//; s/\s*$//; /^\s*$/d'
 ```
 
-[I use this in scripts](https://gist.github.com/seanbreckenridge/02bf00bc50b3ad6a35088fb75e41e9e6) when trying to remove spaces from user input/command output. Its also often helpful when data wrangling, to be able to quickly ignore lines/spaces I'm not interested in.
+[I use this in scripts](https://gist.github.com/purarue/02bf00bc50b3ad6a35088fb75e41e9e6) when trying to remove spaces from user input/command output. Its also often helpful when data wrangling, to be able to quickly ignore lines/spaces I'm not interested in.
 
 ### Install
 
 Using `go install` to put it on your `$GOBIN`:
 
-`go install github.com/seanbreckenridge/chomp@latest`
+`go install github.com/purarue/chomp@latest`
 
 Manually:
 
 ```bash
-git clone https://github.com/seanbreckenridge/chomp
+git clone https://github.com/purarue/chomp
 cd ./chomp
 go build .
 # copy binary somewhere on your $PATH
